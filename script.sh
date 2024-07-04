@@ -9,7 +9,7 @@
 #SBATCH --gres=gpu:2
 #SBATCH --cpus-per-task=16
 # Load the AlphaFold module
-module load /sw/rl9g/modulefiles/applications/alphafold/2.3.2/.python3.9
+module load /give/module/path/with/version
 # Set environment variables
 export ALPHAFOLD_DATA_DIR=/ibex/reference/KSL/alphafold/2.3.1
 export CUDA_VISIBLE_DEVICES=0,1,2,3
@@ -18,8 +18,8 @@ export XLA_PYTHON_CLIENT_MEM_FRACTION=0.5
 export XLA_PYTHON_CLIENT_ALLOCATOR=platform
 export TF_CPP_MIN_LOG_LEVEL=0 # Enable detailed logging
 # Define input and output paths
-FASTA_PATH="/ibex/scratch/projects/c2077/kayenat/eiags_fasta_files/eiag1.fasta"
-OUTPUT_DIR="/ibex/scratch/projects/c2077/kayenat/eiags_output_alphafold"
+FASTA_PATH="/path/to/fasta/file.fasta"
+OUTPUT_DIR="/path/to/output/file"
 # Ensure output directory exists
 mkdir -p $OUTPUT_DIR
 # Activate the correct Python environment
