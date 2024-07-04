@@ -9,8 +9,10 @@
 #SBATCH --mem=200GB
 #SBATCH --gres=gpu:2
 #SBATCH --cpus-per-task=16
+
 # Load the AlphaFold module
 module load /sw/rl9g/modulefiles/applications/alphafold/2.3.2/.python3.9
+
 # Set environment variables
 export ALPHAFOLD_DATA_DIR=/ibex/reference/KSL/alphafold/2.3.1
 export CUDA_VISIBLE_DEVICES=0,1,2,3
@@ -18,13 +20,17 @@ export TF_FORCE_UNIFIED_MEMORY=1
 export XLA_PYTHON_CLIENT_MEM_FRACTION=0.5
 export XLA_PYTHON_CLIENT_ALLOCATOR=platform
 export TF_CPP_MIN_LOG_LEVEL=0 # Enable detailed logging
+
 # Define input and output paths
 FASTA_PATH="/path/to/fasta/file.fasta"
 OUTPUT_DIR="/path/to/output"
+
 # Ensure output directory exists
 mkdir -p $OUTPUT_DIR
+
 # Activate the correct Python environment
 source /ibex/sw/rl9g/alphafold/2.3.2/rl9.1_conda3/Miniconda3/bin/activate alphafold
+
 # Run AlphaFold
 python3 $AlphaFold/run_alphafold.py \
  --use_gpu_relax=true \
