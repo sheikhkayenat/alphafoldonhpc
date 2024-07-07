@@ -40,8 +40,8 @@ export XLA_PYTHON_CLIENT_ALLOCATOR=platform
 export TF_CPP_MIN_LOG_LEVEL=0 # Enable detailed logging
 
 # Define input and output paths
-FASTA_PATH="/ibex/scratch/projects/c2077/kayenat/eiags_fasta_files/eiag1.fasta"
-OUTPUT_DIR="/ibex/scratch/projects/c2077/kayenat/eiags_output_alphafold"
+FASTA_PATH="/path/to/fatsatfile.fasta"
+OUTPUT_DIR="/path/to/alphafold_output"
 # Ensure output directory exists
 mkdir -p $OUTPUT_DIR
 
