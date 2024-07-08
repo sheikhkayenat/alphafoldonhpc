@@ -67,3 +67,23 @@ python3 $AlphaFold/run_alphafold.py \
   --fasta_paths=$FASTA_PATH
 
 echo "AlphaFold run completed."
+
+Instructions
+Clone this repository to your local machine or directly to the HPC cluster.
+Update the FASTA_PATH and OUTPUT_DIR variables in the script if needed.
+Submit the SLURM script using the following command:
+bash
+Copy code
+sbatch run_alphafold.sh
+Monitor the job status using:
+bash
+Copy code
+squeue -u <your-username>
+Notes
+Ensure that the FASTA_PATH points to the correct fasta file you wish to process.
+The OUTPUT_DIR should be a directory where you have write permissions.
+Adjust the SLURM resource allocations (--time, --mem, --gres, --cpus-per-task) based on your specific requirements.
+Troubleshooting
+If the job fails, check the .err file for error messages.
+Verify that all required modules are loaded correctly.
+Ensure that the input fasta file and output directories are correctly specified.
