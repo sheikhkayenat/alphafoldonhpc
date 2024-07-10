@@ -9,6 +9,7 @@ This repository contains scripts and instructions for running AlphaFold v2.3.2 o
     - AlphaFold v2.3.2
     - CUDA 12.2
 3. Ensure the necessary data directories are available at `/the/path/mentioned/in/the/script`.
+4. This script is suitable for sequences up to 600 residues. 
 
 ## SLURM Script
 
