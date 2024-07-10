@@ -8,7 +8,7 @@ This repository contains scripts and instructions for running AlphaFold v2.3.2 o
 2. Modules required:
     - AlphaFold v2.3.2
     - CUDA 12.2
-3. Ensure the necessary data directories are available at `/ibex/reference/KSL/alphafold/2.3.1`.
+3. Ensure the necessary data directories are available at `/the/path/mentioned/in/the/script`.
 
 ## SLURM Script
 
