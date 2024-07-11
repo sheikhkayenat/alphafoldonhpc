@@ -46,6 +46,6 @@ python3 $AlphaFold/run_alphafold.py \
   --db_preset=full_dbs \
   --output_dir=$OUTPUT_DIR \
   --fasta_paths=$FASTA_PATH
-
+  
 echo "AlphaFold run completed."
 
