@@ -9,7 +9,7 @@
 #SBATCH --gres=gpu:2
 #SBATCH --cpus-per-task=16
 
-# Load the AlphaFold module
+# Load the AlphaFold module available on Ibex
 module load /sw/rl9g/modulefiles/applications/alphafold/2.3.2/.python3.9
 
 # Set environment variables
