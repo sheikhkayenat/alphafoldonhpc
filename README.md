@@ -4,7 +4,7 @@ This repository contains scripts and instructions for running AlphaFold v2.3.2 o
 
 ## Prerequisites
 
-1. Access to the HPC cluster at Ibex.
+1. Access to the HPC cluster at Ibex or any other supercomputing cluster.
 2. Modules required:
     - AlphaFold v2.3.2
     - CUDA 12.2
