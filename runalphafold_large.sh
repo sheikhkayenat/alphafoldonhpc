@@ -29,7 +29,7 @@ mkdir -p $OUTPUT_DIR
 # Activate the correct Python environment
 source /ibex/sw/rl9g/alphafold/2.3.2/rl9.1_conda3/Miniconda3/bin/activate alphafold
 
-# Run AlphaFold
+# Run AlphaFold on HPC
 python3 $AlphaFold/run_alphafold.py \
   --use_gpu_relax=true \
   --data_dir=$ALPHAFOLD_DATA_DIR \
