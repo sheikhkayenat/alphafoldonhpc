@@ -13,7 +13,7 @@ This repository contains scripts and instructions for running AlphaFold v2.3.2 o
 
 ## SLURM Script
 
-The following SLURM script is configured to run AlphaFold on the Ibex cluster. This script has been tested and verified to produce the correct output.
+The following SLURM script is configured to run AlphaFold on the Ibex cluster. This script has been tested and verified to produce the correct output. 
 
 ### Script: `run_alphafold.sh`
-### EXECUTED SUCCESSFULLY
+### EXECUTED SUCCESSFUL
